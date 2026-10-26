@@ -10,23 +10,28 @@
 :root{--dif:light-dark(#246eab,#79bdf1);--dea:light-dark(#9457ad,#d2a6e9);--macd-positive:light-dark(#c14851,#f28b97);--macd-negative:light-dark(#25846a,#72d5a0)}
 .legend .dif::before{background:var(--dif)}.legend .dea::before{background:transparent;height:0;border-top:2px dashed var(--dea)}.legend .positive::before,.legend .negative::before{height:9px;width:9px;background:var(--macd-positive)}.legend .negative::before{background:var(--macd-negative)}.macd-cell{white-space:normal;min-width:230px;max-width:340px}.macd-help{padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:6px;margin:16px 0}.macd-help summary{font-size:14px}.macd-help p{font-size:13px;color:var(--muted)}
 
-.latest-status{padding:10px 13px;border-left:3px solid var(--price);background:var(--surface);font-size:14px}.stock{scroll-margin-top:16px}.back-link{font-size:13px}.macd-cell{min-width:200px}main{max-width:1400px}
+.latest-status{padding:9px 13px;border-left:3px solid var(--price);background:var(--surface);font-size:13px}.stock{scroll-margin-top:16px}.back-link{font-size:13px}.macd-cell{min-width:200px}main{max-width:1500px}.summary{padding:13px 0}.filter-help{margin:12px 0}.filter-help summary,.rules-help summary{font-size:13px;color:var(--muted)}.navigation{padding:10px 0 18px}.overview-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);margin-top:18px}.overview-heading strong{color:var(--text);font-weight:500}.overview{margin:6px 0 20px;border:1px solid var(--line);border-radius:6px;cursor:crosshair;background:var(--surface);touch-action:pan-y}.overview svg{display:block;width:100%;height:88px;pointer-events:none}.overview text{font-size:11px;fill:var(--muted)}.overview:focus-visible{outline:2px solid var(--price);outline-offset:3px}.workbench{display:grid;grid-template-columns:230px minmax(0,1fr);gap:22px;align-items:start}.stage-nav{min-width:0;padding:15px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.stage-nav-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px}.stage-nav-head h3{font-size:15px}.stage-nav label{font-size:12px}.stage-nav select{width:100%;font-size:13px}.stage-list{max-height:760px;overflow-y:auto;overscroll-behavior:contain;margin-top:9px;scrollbar-gutter:stable;padding-right:3px}.stage-year-heading{font-size:12px;color:var(--muted);font-weight:500;margin:12px 0 7px}.stage-card{display:block;width:100%;padding:10px 9px;margin:0 0 8px;text-align:left;border-radius:6px;line-height:1.45}.stage-card:hover{text-decoration:none;border-color:var(--price)}.stage-card[aria-pressed=true]{border-color:var(--price);background:color-mix(in srgb,var(--price) 7%,var(--surface));box-shadow:inset 3px 0 0 var(--price)}.stage-card-head{display:flex;align-items:center;justify-content:space-between;gap:3px}.stage-card-head strong{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}.stage-badge{font-size:10px;white-space:nowrap;padding:2px 4px;border-radius:3px}.stage-badge.done{background:color-mix(in srgb,var(--confirm) 10%,transparent);color:var(--confirm)}.stage-badge.pending{background:light-dark(#fff1d7,#4d3d20);color:light-dark(#785516,#e6c27c)}.stage-card svg{display:block;width:100%;height:39px;margin:5px 0}.stage-card-foot{display:flex;flex-direction:column;gap:2px;font-size:11px;color:var(--muted)}.stage-nav>.note{font-size:11px;margin:8px 0 0}.detail-view{min-width:0;scroll-margin-top:20px}.view-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin-bottom:13px}.view-controls label{font-size:12px}.view-controls select{font-size:13px;padding:6px 8px}.stage-actions{display:flex;gap:6px;margin-left:auto}.stage-actions button{font-size:12px;padding:7px 9px}button:disabled{opacity:.4;cursor:default;text-decoration:none}.phase-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:6px;background:var(--surface)}.phase-steps>div{padding:10px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}.phase-steps>div+div{border-left:1px solid var(--line)}.step-label{font-size:11px;color:var(--muted)}.phase-steps strong{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}.phase-steps small{font-size:11px}.anchor-label{color:var(--signal)}.confirmed-label{color:var(--confirm)}.phase-note{font-size:11px;color:var(--muted);margin:7px 0 12px;min-height:32px}.window-summary{display:flex;flex-direction:column;gap:5px;padding:13px 15px;min-height:111px;background:var(--surface);border:1px solid var(--line);border-radius:6px;margin-bottom:12px}.window-summary span,.window-summary small{font-size:12px;color:var(--muted)}.range-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:9px 0;border-bottom:1px solid var(--line);margin-bottom:10px}.view-range{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}.range-actions{display:flex;gap:5px}.range-actions button{font-size:11px;padding:4px 7px}.detail-view .legend{gap:9px 14px;font-size:12px}.detail-view .readout{font-size:12px;min-height:42px;margin:8px 0}.plot text.day-number{fill:var(--confirm);font-size:11px;font-weight:600}.all-events{border-top:1px solid var(--line);padding-top:16px;margin-top:20px}.all-events>summary{font-size:13px}.stock-head>.stock-meta{font-size:12px}.stock-title>span{font-size:13px;color:var(--muted)}
+@media(max-width:1050px){.workbench{grid-template-columns:200px minmax(0,1fr);gap:16px}.stage-nav{padding:11px}.stage-actions{margin-left:0}.range-actions{flex-wrap:wrap}}
+@media(max-width:820px){.workbench{grid-template-columns:1fr}.stage-list{max-height:230px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.stage-year-heading{grid-column:1/-1;margin:6px 0 0}.stage-card{margin:0}.stage-card svg{height:30px}.stage-nav{padding:12px}.stage-nav label{max-width:240px}.view-controls{margin-top:4px}.overview-heading span{font-size:11px}}
+@media(max-width:480px){.phase-steps{grid-template-columns:1fr}.phase-steps>div{display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;padding:8px 10px}.phase-steps>div+div{border-left:0;border-top:1px solid var(--line)}.phase-steps small{grid-column:1/-1}.phase-steps strong{text-align:right;font-size:13px}.stage-card-head{flex-wrap:wrap}.stage-card-head strong{font-size:11px}.view-controls label{flex:1;min-width:125px}.stage-actions{width:100%;justify-content:space-between}.range-actions{width:100%;justify-content:space-between}.detail-view .legend{font-size:11px}}
 </style></head><body><main><header>
 <a class="back-link" href="https://iamweiliu.github.io/making-money/">← 股票复盘主页</a>
 <p class="subtle">2016.01.01 — 2026.10.24 · 日线收盘 · 固定观察两只ETF</p>
 <h1>双ETF：−15%超跌后的3日不新低</h1>
 <p class="subtle">588940 科创50ETF富国 · 159915 创业板ETF易方达</p>
-<p class="note">159915从2016年首个交易日开始观察；588940于2025年6月3日上市，从上市日开始展示。可在各ETF下方选择某轮观察，放大查看前后行情。</p>
-<p>BIAS60 =（复权收盘价 ÷ 60日简单移动均价 − 1）×100%。前一交易日 &gt; −15%，当日 ≤ −15%，启动一轮观察。</p>
+<p class="note">先选阶段，再看局部：默认打开最近一轮。左侧按年份挑选，右侧对照价格、乖离率与MACD；完整历史保留在总览中。</p>
 <div id="summary" class="summary"></div>
+<details class="rules-help"><summary>策略与标记说明</summary>
+<p>BIAS60 =（复权收盘价 ÷ 60日简单移动均价 − 1）×100%。前一交易日 &gt; −15%，当日 ≤ −15%，启动一轮观察。</p>
 <p>从起点的日内最低价开始记录：每次出现更低的最低价，更新参考低点并清零；此后连续3个交易日未跌破，在第3天收盘画绿三角。平低计入，参考低点当天不计入。</p>
 <p class="note">红点是确认后回标的参考低点，尚未确认的低点不画红点。一轮观察只确认一次；观察中反复穿越−15%继续原来一轮。确认当天或之后收盘回到−15%以上，随后再次跌入时可以启动下一轮。</p>
 <p class="note">MACD（12、26、9）继续作为辅助对照，不参与确认筛选。图中显示价格、BIAS60和MACD三栏，可点选观察周期或在图上移动指针。</p>
+<p class="note">159915从2016年首个交易日开始观察；588940从2025年6月3日上市日起展示。所有阶段的图表都会根据当前可见区间调整纵轴，比较不同阶段时请同时查看轴刻度。</p></details>
 </header>
-<div class="toolbar"><label>ETF范围<select id="scope"><option value="all">全部两只ETF</option><option value="hit">出现超跌的ETF</option><option value="none">未触发的ETF</option></select></label>
+<details class="filter-help"><summary>筛选ETF与排序</summary><div class="toolbar"><label>ETF范围<select id="scope"><option value="all">全部两只ETF</option><option value="hit">出现超跌的ETF</option><option value="none">未触发的ETF</option></select></label>
 <label>查找ETF<input id="search" type="search" placeholder="名称或代码" autocomplete="off"></label>
 <label>排列方式<select id="sort"><option value="code">按ETF代码</option><option value="date">按首次超跌日期</option><option value="count">按观察轮数</option><option value="depth">按最深乖离</option></select></label>
-<button id="reset" type="button">显示全部ETF</button></div>
+<button id="reset" type="button">恢复默认视图</button></div></details>
 <p id="status" class="status subtle" aria-live="polite"></p><nav id="navigation" class="navigation" aria-label="ETF快速定位"></nav>
 <section id="charts" aria-label="ETF复盘图表"></section><p id="empty" class="empty" hidden>没有符合筛选条件的ETF。</p>
 <details><summary>计算规则、复权与数据来源</summary>
@@ -48,15 +53,42 @@ const num = v => v == null ? '—' : Number(v).toFixed(3);
 const fmtPrice = v => v >= 1000 ? v.toFixed(0) : v >= 10 ? v.toFixed(1) : v.toFixed(3);
 const text = (x,y,s,extra='') => `<text x="${x}" y="${y}" ${extra}>${esc(s)}</text>`;
 
-function viewRows(asset, eventId) {
+function boundRange(length, start, size) {
+  size=Math.max(1,Math.min(length,Math.round(size)));
+  start=Math.max(0,Math.min(length-size,Math.round(start)));
+  return [start,start+size-1];
+}
+
+function eventRange(asset,eventId,context=20){
+  const e=asset.events.find(e=>e.id===eventId);
+  if(!e)return [0,asset.rows.length-1];
+  const a=asset.rows.findIndex(r=>r[0]>=e.start);
+  const end=e.confirmation.date||e.confirmation.last_observation;
+  let b=asset.rows.findIndex(r=>r[0]>=end);if(b<0)b=asset.rows.length-1;
+  return [Math.max(0,a-context),Math.min(asset.rows.length-1,b+context)];
+}
+
+function rangeFor(asset,view){
+  if(view.mode==='stage')return eventRange(asset,view.event,view.context);
+  if(view.mode==='recent')return boundRange(asset.rows.length,asset.rows.length-120,120);
+  if(view.mode==='year'){
+    const indices=asset.rows.map((r,i)=>r[0].startsWith(view.year)?i:-1).filter(i=>i>=0);
+    return indices.length?[indices[0],indices.at(-1)]:[0,asset.rows.length-1];
+  }
+  if(view.mode==='window'&&view.range)return boundRange(asset.rows.length,view.range[0],view.range[1]-view.range[0]+1);
+  return [0,asset.rows.length-1];
+}
+
+function zoomRange(length,range,multiplier){
+  const size=Math.max(10,Math.round((range[1]-range[0]+1)*multiplier));
+  return boundRange(length,(range[0]+range[1]+1-size)/2,size);
+}
+
+function viewRows(asset, eventId, options={}) {
+  if(options.range)return asset.rows.slice(options.range[0],options.range[1]+1);
   if (!eventId) return asset.rows;
-  const e = asset.events.find(e=>e.id===eventId);
-  if (!e) return asset.rows;
-  const a = asset.rows.findIndex(r=>r[0]>=e.start);
-  const lastDate = e.confirmation?.date || e.confirmation?.last_observation || e.last_below;
-  const b0 = asset.rows.findIndex(r=>r[0]>=lastDate);
-  const b = b0 < 0 ? asset.rows.length-1 : b0;
-  return asset.rows.slice(Math.max(0,a-30),Math.min(asset.rows.length,b+31));
+  const [a,b]=eventRange(asset,eventId,options.context??20);
+  return asset.rows.slice(a,b+1);
 }
 
 function geometry(rows, width) {
@@ -95,13 +127,22 @@ function referencePoints(asset) {
   return [...points.values()].sort((a,b)=>a.date.localeCompare(b.date));
 }
 
-function renderChart(asset, eventId, width) {
-  const rows=viewRows(asset,eventId), g=geometry(rows,width), {w,left,right,x,py,by,my}=g;
+function renderChart(asset, eventId, width, options={}) {
+  const rows=viewRows(asset,eventId,options), g=geometry(rows,width), {w,left,right,x,py,by,my}=g;
   const dateIndex=new Map(rows.map((r,i)=>[r[0],i]));
-  const references=referencePoints(asset).filter(p=>dateIndex.has(p.date));
-  const confirmations=(asset.confirmations||[]).filter(m=>dateIndex.has(m.date));
+  const references=referencePoints(asset).filter(p=>dateIndex.has(p.date)&&(!options.onlyActive||!eventId||p.episode_ids.includes(eventId)));
+  const confirmations=(asset.confirmations||[]).filter(m=>dateIndex.has(m.date)&&(!options.onlyActive||!eventId||m.episode_ids.includes(eventId)));
   const p=[`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${g.height}" width="${w}" height="${g.height}" role="img" aria-label="${esc(asset.name)}复权价格、BIAS60及MACD（12、26、9）；红圆点表示参考低点，绿三角表示3日不新低确认日">`,
     `<title>${esc(asset.code+' '+asset.name)}：${rows[0][0]}—${rows.at(-1)[0]}</title>`];
+  const selected=asset.events.find(e=>e.id===eventId);
+  if(selected){
+    const start=dateIndex.get(selected.start),endDate=selected.confirmation.date||selected.confirmation.last_observation;
+    const end=dateIndex.get(endDate);
+    if(start!==undefined&&end!==undefined){
+      for(const [y,height] of [[27,177],[255,91],[398,120]])p.push(`<rect class="observation-band" x="${x(start)}" y="${y}" width="${Math.max(2,x(end)-x(start))}" height="${height}" fill="var(--price)" opacity=".055"/>`);
+      p.push(`<line x1="${x(start)}" x2="${x(start)}" y1="27" y2="518" stroke="var(--price)" stroke-dasharray="2 5" opacity=".45"><title>${selected.start} 首次跌入−15%</title></line>`);
+    }
+  }
   // Shade out-of-universe spans, keeping membership visible after a price episode starts.
   let start=null;
   rows.forEach((r,i)=>{
@@ -163,7 +204,10 @@ function renderChart(asset, eventId, width) {
           `<circle class="low-anchor" cx="${x(anchorIndex)}" cy="${yy}" r="5.5"><title>${esc('已确认的参考低点 '+c.anchor_date+' 实际最低价 '+num(c.anchor_raw_low))}</title></circle>`);
         c.confirming_days.forEach((date,j)=>{
           const index=dateIndex.get(date);
-          if(index!==undefined)p.push(`<circle class="reference-anchor" cx="${x(index)}" cy="${py(rows[index][6])}" r="3"><title>${esc(date+' 第'+(j+1)+'天未创新低')}</title></circle>`);
+          if(index!==undefined){
+            p.push(`<circle class="reference-anchor" cx="${x(index)}" cy="${py(rows[index][6])}" r="3"><title>${esc(date+' 第'+(j+1)+'天未创新低')}</title></circle>`);
+            if(rows.length<=90)p.push(text(x(index),Math.min(224,py(rows[index][6])+19),j+1,'text-anchor="middle" class="day-number"'));
+          }
         });
       }
     }
@@ -207,14 +251,83 @@ function rowHtml(e, selected, asset) {
   return `<tr data-event="${e.id}"${selected===e.id?' class="selected"':''}><td><button type="button" data-focus="${e.id}" aria-label="定位${esc(e.name)} ${e.start}观察周期">${e.start}</button></td><td>${confirm}</td><td>${anchor}</td><td class="macd-cell">${macdHtml}</td><td>${pct(e.previous_bias)} → ${pct(e.start_bias)}</td><td>${num(e.start_close)}</td><td>${c?.elapsed_sessions??'—'}${c?.date?'':'（截至末日）'}</td><td>${pct(e.observation_min_bias)}<br><span class="subtle">${e.observation_min_bias_date||'—'}</span></td><td>${e.recovered||'截至10-23未收复'}</td></tr>`;
 }
 
+function sparkline(a,e){
+  const rows=viewRows(a,e.id,{context:10}),lo=Math.min(...rows.map(r=>r[6])),hi=Math.max(...rows.map(r=>r[1]));
+  const x=i=>4+i/Math.max(1,rows.length-1)*172,y=v=>34-(v-lo)/Math.max(.001,hi-lo)*28;
+  let svg=`<svg viewBox="0 0 180 40" aria-hidden="true"><path d="${pathFor(rows,1,x,y)}" fill="none" stroke="var(--price)" stroke-width="1.5"/>`;
+  if(e.confirmation.date){
+    const c=e.confirmation,ai=rows.findIndex(r=>r[0]===c.anchor_date),ci=rows.findIndex(r=>r[0]===c.date);
+    if(ai>=0)svg+=`<circle cx="${x(ai)}" cy="${y(c.anchor_adj_low)}" r="2.5" fill="var(--signal)"/>`;
+    if(ci>=0)svg+=`<path d="M${x(ci)},${y(rows[ci][1])-4}l-3,6h6Z" fill="var(--confirm)"/>`;
+  }
+  return svg+'</svg>';
+}
+
+function stageListHtml(a,year='all'){
+  const events=a.events.filter(e=>year==='all'||e.start.startsWith(year)).slice().reverse();
+  let current='',html='';
+  events.forEach(e=>{
+    const y=e.start.slice(0,4),number=a.events.indexOf(e)+1,c=e.confirmation;
+    if(y!==current){html+=`<h4 class="stage-year-heading">${y}年</h4>`;current=y;}
+    html+=`<button type="button" class="stage-card" data-stage="${e.id}" aria-pressed="false" aria-label="查看${a.name} ${e.start}阶段">
+      <span class="stage-card-head"><strong>${e.start}</strong><span class="stage-badge ${c.date?'done':'pending'}">${c.date?'已确认':`待确认 ${c.streak}/3`}</span></span>
+      ${sparkline(a,e)}<span class="stage-card-foot">第${number}阶段 · ${c.date?c.date.slice(5)+' 收盘确认':'观察中'}<span>触发 ${pct(e.start_bias)}</span></span></button>`;
+  });
+  return html||'<p class="note">该年没有触发阶段。</p>';
+}
+
+function overviewHtml(a,range){
+  const rows=a.rows,x=i=>16+i/Math.max(1,rows.length-1)*968;
+  const values=rows.map(r=>r[1]),lo=Math.min(...values),hi=Math.max(...values),y=v=>59-(v-lo)/Math.max(.001,hi-lo)*43;
+  let html=`<svg viewBox="0 0 1000 88" aria-hidden="true"><path d="${pathFor(rows,1,x,y)}" fill="none" stroke="var(--low)" stroke-width="1.2"/>
+    <rect class="overview-selection" x="${x(range[0])}" y="7" width="${Math.max(3,x(range[1])-x(range[0]))}" height="58" fill="var(--price)" fill-opacity=".13" stroke="var(--price)" stroke-width="1"/>`;
+  a.confirmations.forEach(m=>{
+    const i=rows.findIndex(r=>r[0]===m.date);
+    if(i>=0)html+=`<circle cx="${x(i)}" cy="64" r="2" fill="var(--confirm)"/>`;
+  });
+  const indices=[0,1,2,3,4,5].map(k=>Math.round((rows.length-1)*k/5));
+  indices.forEach((i,k)=>html+=text(x(i),82,rows[i][0].slice(0,7),`text-anchor="${k===0?'start':k===5?'end':'middle'}"`));
+  return html+'</svg>';
+}
+
+function detailHtml(a,view,range){
+  const e=view.event?a.events.find(e=>e.id===view.event):null;
+  if(!e){
+    const count=a.confirmations.filter(m=>m.date>=a.rows[range[0]][0]&&m.date<=a.rows[range[1]][0]).length;
+    return `<div class="window-summary"><strong>${view.mode==='year'?view.year+'年':view.mode==='full'?'完整历史':view.mode==='recent'?'最近120个交易日':'局部区间'}</strong><span>窗口内 ${count} 个确认点 · 价格、乖离率、MACD使用同一时间范围</span><small>点击左侧阶段可查看一次完整的触发与确认过程。</small></div>`;
+  }
+  const c=e.confirmation;
+  return `<div class="phase-steps"><div><span class="step-label">① 跌入 −15%</span><strong>${e.start}</strong><small>BIAS60 ${pct(e.start_bias)}</small></div>
+    <div><span class="step-label ${c.date?'anchor-label':''}">② ${c.date?'守住的参考低点':'候选低点'}</span><strong>${c.anchor_date}</strong><small>日内最低 ${num(c.anchor_raw_low)}元${c.date?'':' · 未确认，不画红点'}</small></div>
+    <div><span class="step-label ${c.date?'confirmed-label':''}">③ ${c.date?'第3日收盘确认':'等待连续3天不新低'}</span><strong>${c.date||c.streak+' / 3 天'}</strong><small>${c.date?'收盘 '+num(c.close)+'元':'截至 '+c.last_observation+'；新低会重置计数'}</small></div></div>
+    <p class="phase-note">${c.date?'3个观察日：'+c.confirming_days.join(' → '):'本轮仍在观察；红点与绿三角只在确认后显示。'} · 主图仅突出本阶段信号，淡蓝区域为起点至确认／观察末日。</p>`;
+}
+
 function cardHtml(a) {
+  const years=[...new Set(a.rows.map(r=>r[0].slice(0,4)))].reverse();
+  const stageYears=[...new Set(a.events.map(e=>e.start.slice(0,4)))].reverse();
   const ignored=a.suppressed_starts||[];
-  const ignoredHtml=ignored.length?`<details><summary>已忽略 ${ignored.length} 次重复触发</summary>${ignored.map(e=>`<p class="note">${e.date} 再次跌入−15%：${e.reason==='observing'?`${e.cycle_start}启动的观察尚未结束，继续原来一轮。`:`${e.cycle_start}启动的一轮已确认，但从确认日（含当天）起尚未完成“先回到−15%以上，再次跌入”的重启条件。`}</p>`).join('')}</details>`:'';
-  return `<article class="stock" id="stock-${a.code}" data-code="${a.code}"><div class="stock-head"><div class="stock-title"><h2>${esc(a.name)} <span class="stock-code">${a.code}</span></h2><span>${a.events.length} 轮观察 · ${(a.confirmations||[]).length} 个3日确认点</span></div><span class="stock-meta">${a.first_price} — ${a.last_price} · ${a.eligible_sessions} 个交易日</span></div>
-    ${a.events.length?`<div class="plot-controls"><label>聚焦一轮观察<select class="episode-select"><option value="">完整观察期</option>${a.events.map(e=>`<option value="${e.id}">${e.start} → ${e.confirmation.date||'待确认'}</option>`).join('')}</select></label><button type="button" class="previous">上一轮</button><button type="button" class="next">下一轮</button><span class="note">保留起点至确认日前后各30个交易日</span></div>`:''}
-    ${a.insufficient_history_sessions?`<p class="note">上市初期${a.insufficient_history_sessions}个交易日不足60日历史；BIAS60从${a.first_bias_date}开始可计算。</p>`:''}<p class="latest-status">截至 ${a.last_price} · 收盘 ${num(a.latest_close)}元 · BIAS60 <strong>${pct(a.latest_bias)}</strong> · ${esc(a.latest_status)}</p><div class="legend"><span>复权收盘 / BIAS60</span><span class="ma">MA60</span><span class="low">日内最低价</span><span class="signal">绿三角对应的参考低点</span><span class="confirm">3日不新低确认日</span></div>
-    <div class="legend macd-legend"><span class="dif">DIF</span><span class="dea">DEA</span><span class="positive">红柱 ≥ 0</span><span class="negative">绿柱 &lt; 0</span><small>柱 = 2 ×（DIF − DEA）；第三栏标记对齐到 DIF</small></div><div class="plot"></div><div class="readout">移动指针或点按图表，同时查看价格、乖离率和MACD。</div>
-    ${a.events.length?`<div class="table-wrap"><table><thead><tr><th>本轮首次−15%起点</th><th>3日不新低确认日（绿三角）</th><th>参考低点（确认后画红点）</th><th>确认日MACD（辅助观察）</th><th>前日 → 起点日乖离</th><th>起点实际收盘（元）</th><th>等待确认（交易日）</th><th>观察期最深乖离</th><th>首次收复−15%（继续观察）</th></tr></thead><tbody>${a.events.map(e=>rowHtml(e,'',a)).join('')}</tbody></table></div>${ignoredHtml}`:`<p class="note">${a.valid_bias_sessions===0?'观察期内未积累60个有效交易日，BIAS60尚不可判定。':`观察期内${a.valid_bias_sessions}个可计算交易日，未出现BIAS60 ≤ −15%；最低为${pct(a.min_eligible_bias)}。`}</p>`}</article>`;
+  const ignoredHtml=ignored.length?`<details><summary>已忽略 ${ignored.length} 次重复触发</summary>${ignored.map(e=>`<p class="note">${e.date} 再次跌入−15%：${e.cycle_start}启动的观察${e.reason==='observing'?'尚未结束，继续原来一轮。':'确认后，尚未满足重新跌入的条件。'}</p>`).join('')}</details>`:'';
+  return `<article class="stock" id="stock-${a.code}" data-code="${a.code}">
+    <div class="stock-head"><div class="stock-title"><h2>${esc(a.name)} <span class="stock-code">${a.code}</span></h2><span>${a.events.length}个阶段 · ${a.confirmations.length}个确认点</span></div><span class="stock-meta">${a.first_price} — ${a.last_price}</span></div>
+    <p class="latest-status">截至 ${a.last_price} · 收盘 ${num(a.latest_close)}元 · BIAS60 <strong>${pct(a.latest_bias)}</strong> · ${esc(a.latest_status)}</p>
+    <div class="overview-heading"><strong>完整历史总览</strong><span>蓝框是下方放大的区间 · 点击时间轴跳转附近120个交易日</span></div>
+    <div class="overview" tabindex="0" role="button" aria-label="${esc(a.name)}历史总览，点击定位，左右键移动观察窗口"></div>
+    <div class="workbench"><aside class="stage-nav" aria-label="${esc(a.name)}阶段列表"><div class="stage-nav-head"><h3>逐段复盘</h3><small>由近到远</small></div>
+      <label>阶段年份<select class="stage-year"><option value="all">全部阶段（${a.events.length}）</option>${stageYears.map(y=>`<option>${y}</option>`).join('')}</select></label>
+      <div class="stage-list"></div><p class="note">每张缩略图独立缩放，只比较走势形态。</p></aside>
+    <div class="detail-view"><div class="view-controls"><label>查看方式<select class="view-mode"><option value="stage">逐段复盘</option><option value="recent">最近120日</option><option value="year">按年份</option><option value="full">完整历史</option><option value="window">局部区间</option></select></label>
+      <label class="context-field">阶段前后视野<select class="context"><option value="10">各10个交易日</option><option value="20" selected>各20个交易日</option><option value="40">各40个交易日</option></select></label>
+      <label class="year-field" hidden>行情年份<select class="year">${years.map(y=>`<option>${y}</option>`).join('')}</select></label>
+      <div class="stage-actions"><button class="previous" type="button">上一阶段</button><button class="next" type="button">下一阶段</button></div></div>
+      <div class="stage-detail" aria-live="polite"></div>
+      <div class="range-bar"><span class="view-range"></span><div class="range-actions"><button type="button" data-command="back" aria-label="向前移动时间窗口">← 前移</button><button type="button" data-command="zoom-in">放大 ＋</button><button type="button" data-command="zoom-out">缩小 −</button><button type="button" data-command="forward" aria-label="向后移动时间窗口">后移 →</button></div></div>
+      <div class="legend"><span>复权收盘</span><span class="ma">MA60</span><span class="low">日内最低价</span><span class="signal">已确认的参考低点</span><span class="confirm">第3日确认</span></div>
+      <div class="legend macd-legend"><span class="dif">DIF</span><span class="dea">DEA</span><span class="positive">红柱 ≥ 0</span><span class="negative">绿柱 &lt; 0</span></div>
+      <div class="plot"></div><div class="readout">移动指针或点按图表，查看同一天的价格、乖离率和MACD。</div>
+    </div></div>
+    ${a.insufficient_history_sessions?`<p class="note">上市初期${a.insufficient_history_sessions}个交易日不足60日历史；BIAS60从${a.first_bias_date}开始可计算。</p>`:''}
+    <details class="all-events"><summary>展开全部 ${a.events.length} 个阶段明细</summary><div class="table-wrap"><table><thead><tr><th>首次−15%起点</th><th>第3日确认</th><th>参考低点</th><th>确认日MACD</th><th>前日 → 起点日乖离</th><th>起点收盘（元）</th><th>等待确认（交易日）</th><th>观察期最深乖离</th><th>首次收复−15%</th></tr></thead><tbody>${a.events.map(e=>rowHtml(e,'',a)).join('')}</tbody></table></div></details>${ignoredHtml}</article>`;
 }
 
 function filterAssets(assets, scope, query, sort) {
@@ -225,7 +338,8 @@ function filterAssets(assets, scope, query, sort) {
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports={renderChart,viewRows,geometry,filterAssets,cardHtml,rowHtml,referencePoints,macdStatus};
+  module.exports={renderChart,viewRows,geometry,filterAssets,cardHtml,rowHtml,referencePoints,macdStatus,
+    boundRange,eventRange,rangeFor,zoomRange,stageListHtml,overviewHtml,detailHtml};
   return;
 }
 const D=JSON.parse(document.getElementById('study-data').textContent), S=D.summary;
@@ -234,13 +348,34 @@ byId('summary').innerHTML=`<span><strong>${S.confirmed_episodes} / ${S.tracking_
 byId('coverage').textContent='行情及复权因子：AKShare / 新浪；数据截至2026-10-23。';
 const state=new Map(), observer=new ResizeObserver(entries=>entries.forEach(entry=>{
   const card=entry.target.closest('.stock'), st=state.get(card.dataset.code), width=Math.round(entry.contentRect.width);
+  if(!st||!entry.target.isConnected)return;
   if(width>0&&width!==st.width){st.width=width;draw(card,st);}
 }));
 
 function draw(card,st) {
-  const plot=card.querySelector('.plot');
-  plot.innerHTML=renderChart(st.a,st.event,st.width||plot.clientWidth||900);
-  const rows=viewRows(st.a,st.event), g=geometry(rows,st.width||plot.clientWidth||900), svg=plot.querySelector('svg');
+  const plot=card.querySelector('.plot'),range=rangeFor(st.a,st),options={range,onlyActive:!!st.event};
+  st.range=range;
+  const rows=viewRows(st.a,st.event,options),g=geometry(rows,st.width||plot.clientWidth||900);
+  plot.innerHTML=renderChart(st.a,st.event,g.w,options);
+  const svg=plot.querySelector('svg');
+  card.querySelector('.overview').innerHTML=overviewHtml(st.a,range);
+  card.querySelector('.view-mode').value=st.mode;
+  card.querySelector('.context').value=String(st.context);
+  card.querySelector('.year').value=st.year;
+  card.querySelector('.context-field').hidden=st.mode!=='stage';
+  card.querySelector('.year-field').hidden=st.mode!=='year';
+  card.querySelector('.stage-actions').hidden=!st.event;
+  const ei=st.a.events.findIndex(e=>e.id===st.event);
+  card.querySelector('.previous').disabled=ei<=0;
+  card.querySelector('.next').disabled=ei<0||ei>=st.a.events.length-1;
+  card.querySelector('.stage-detail').innerHTML=detailHtml(st.a,st,range);
+  card.querySelector('.view-range').textContent=`${st.event?'第'+(ei+1)+'阶段 · ':''}${rows[0][0]} — ${rows.at(-1)[0]} · ${rows.length}个交易日`;
+  card.querySelector('[data-command="back"]').disabled=range[0]===0;
+  card.querySelector('[data-command="forward"]').disabled=range[1]===st.a.rows.length-1;
+  card.querySelector('[data-command="zoom-in"]').disabled=rows.length<=10;
+  card.querySelector('[data-command="zoom-out"]').disabled=rows.length===st.a.rows.length;
+  card.querySelectorAll('[data-stage]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.stage===st.event)));
+  card.querySelector('.readout').textContent='移动指针或点按图表，查看同一天的价格、乖离率和MACD。';
   const hit=plot.querySelector('[data-hit]'), guide=plot.querySelector('[data-guide]');
   function inspect(ev){
     const rect=svg.getBoundingClientRect(),xx=(ev.clientX-rect.left)*g.w/rect.width;
@@ -248,8 +383,8 @@ function draw(card,st) {
     guide.setAttribute('x1',g.x(i));guide.setAttribute('x2',g.x(i));guide.setAttribute('visibility','visible');
     const c=st.a.events.find(e=>e.id===st.event)?.confirmation;
     const day=c?.confirming_days.indexOf(r[0])??-1;
-    const ref=referencePoints(st.a).find(p=>p.date===r[0]);
-    const tag=day>=0?` · 第${day+1}天未创新低${day===2?'，收盘确认':''}`:ref?` · 红点参考低点，${ref.confirmation_dates.join('、')}收盘确认`:(st.a.confirmations||[]).some(m=>m.date===r[0])?' · 3日不新低确认':'';
+    const ref=referencePoints(st.a).find(p=>p.date===r[0]&&(!st.event||p.episode_ids.includes(st.event)));
+    const tag=day>=0?` · 第${day+1}天未创新低${day===2?'，收盘确认':''}`:ref?` · 红点参考低点，${ref.confirmation_dates.join('、')}收盘确认`:(st.a.confirmations||[]).some(m=>m.date===r[0]&&(!st.event||m.episode_ids.includes(st.event)))?' · 3日不新低确认':'';
     const fullIndex=st.a.rows.findIndex(row=>row[0]===r[0]);
     card.querySelector('.readout').textContent=`${r[0]} · 实际收盘 ${num(r[5])}元 · 日内最低 ${num(r[7])}元 · MA60（复权） ${num(r[2])} · BIAS60 ${pct(r[3])} · DIF ${num(r[8])} / DEA ${num(r[9])} / MACD柱 ${num(r[10])} · ${macdStatus(r,st.a.rows[fullIndex-1])} · 固定观察ETF${tag}`;
   }
@@ -258,30 +393,75 @@ function draw(card,st) {
 }
 
 function focus(card,eventId){
-  const st=state.get(card.dataset.code);st.event=eventId;
-  const selector=card.querySelector('.episode-select');if(selector)selector.value=eventId;
+  const st=state.get(card.dataset.code),e=st.a.events.find(e=>e.id===eventId);
+  if(!e)return;
+  st.event=eventId;st.mode='stage';
+  if(st.listYear!=='all'&&!e.start.startsWith(st.listYear)){
+    st.listYear=e.start.slice(0,4);card.querySelector('.stage-year').value=st.listYear;
+    card.querySelector('.stage-list').innerHTML=stageListHtml(st.a,st.listYear);
+  }
   draw(card,st);
+  const button=card.querySelector(`[data-stage="${eventId}"]`),list=card.querySelector('.stage-list');
+  if(button){const b=button.getBoundingClientRect(),r=list.getBoundingClientRect();if(b.top<r.top||b.bottom>r.bottom)list.scrollTop+=b.top-r.top-8;}
+}
+
+function moveRange(card,command){
+  const st=state.get(card.dataset.code),range=rangeFor(st.a,st),n=st.a.rows.length,size=range[1]-range[0]+1;
+  if(command==='zoom-in'||command==='zoom-out')st.range=zoomRange(n,range,command==='zoom-in'?.5:2);
+  else{st.range=boundRange(n,range[0]+(command==='back'?-1:1)*Math.max(1,Math.round(size/2)),size);st.event='';}
+  st.mode='window';draw(card,st);
 }
 
 function rebuild(){
-  observer.disconnect();state.clear();
+  observer.disconnect();const previous=new Map(state);state.clear();
   const assets=filterAssets(D.assets,byId('scope').value,byId('search').value,byId('sort').value);
   byId('status').textContent=`显示 ${assets.length} 只ETF · ${assets.reduce((s,a)=>s+a.events.length,0)} 轮观察 · ${assets.reduce((s,a)=>s+(a.confirmations||[]).length,0)} 个3日确认点`;
   byId('empty').hidden=assets.length>0;
   byId('navigation').innerHTML=assets.map(a=>`<a href="#stock-${a.code}">${esc(a.name)} <small>${a.events.length}</small></a>`).join('');
   root.innerHTML=assets.map(cardHtml).join('');
   assets.forEach(a=>{
-    const card=byId('stock-'+a.code),plot=card.querySelector('.plot'),st={a,event:'',width:plot.clientWidth||900};
-    state.set(a.code,st);draw(card,st);observer.observe(plot);
-    const select=card.querySelector('.episode-select');
-    if(select){select.addEventListener('change',()=>focus(card,select.value));
-      card.querySelector('.previous').addEventListener('click',()=>{const i=a.events.findIndex(e=>e.id===st.event);focus(card,a.events[i<=0?a.events.length-1:i-1].id);});
-      card.querySelector('.next').addEventListener('click',()=>{const i=a.events.findIndex(e=>e.id===st.event);focus(card,a.events[(i+1)%a.events.length].id);});
-      card.querySelectorAll('[data-focus]').forEach(b=>b.addEventListener('click',()=>{focus(card,b.dataset.focus);plot.scrollIntoView({block:'center',behavior:'auto'});}));}
+    const card=byId('stock-'+a.code),plot=card.querySelector('.plot');
+    const st={a,event:a.events.at(-1)?.id||'',mode:a.events.length?'stage':'recent',context:20,
+      year:a.last_price.slice(0,4),listYear:'all',...previous.get(a.code),width:plot.clientWidth||900};
+    state.set(a.code,st);
+    const stageYear=card.querySelector('.stage-year');stageYear.value=st.listYear;
+    card.querySelector('.stage-list').innerHTML=stageListHtml(a,st.listYear);
+    draw(card,st);observer.observe(plot);
+    card.addEventListener('click',ev=>{
+      const stage=ev.target.closest('[data-stage]'),table=ev.target.closest('[data-focus]'),command=ev.target.closest('[data-command]');
+      if(stage)focus(card,stage.dataset.stage);
+      else if(table){focus(card,table.dataset.focus);card.querySelector('.detail-view').scrollIntoView({block:'start',behavior:'auto'});}
+      else if(command)moveRange(card,command.dataset.command);
+    });
+    stageYear.addEventListener('change',()=>{
+      st.listYear=stageYear.value;card.querySelector('.stage-list').innerHTML=stageListHtml(a,st.listYear);
+      const event=a.events.filter(e=>st.listYear==='all'||e.start.startsWith(st.listYear)).at(-1);
+      if(event)focus(card,event.id);else draw(card,st);
+    });
+    card.querySelector('.view-mode').addEventListener('change',ev=>{
+      st.mode=ev.target.value;
+      if(st.mode==='stage')st.event=st.event||a.events.at(-1)?.id||'';else st.event='';
+      draw(card,st);
+    });
+    card.querySelector('.context').addEventListener('change',ev=>{st.context=Number(ev.target.value);draw(card,st);});
+    card.querySelector('.year').addEventListener('change',ev=>{st.year=ev.target.value;draw(card,st);});
+    card.querySelector('.previous').addEventListener('click',()=>{const i=a.events.findIndex(e=>e.id===st.event);if(i>0)focus(card,a.events[i-1].id);});
+    card.querySelector('.next').addEventListener('click',()=>{const i=a.events.findIndex(e=>e.id===st.event);if(i>=0&&i<a.events.length-1)focus(card,a.events[i+1].id);});
+    const overview=card.querySelector('.overview');
+    overview.addEventListener('click',ev=>{
+      if(ev.button!==0)return;
+      const r=overview.querySelector('svg').getBoundingClientRect();
+      const index=Math.round((((ev.clientX-r.left)/r.width*1000)-16)/968*(a.rows.length-1));
+      st.range=boundRange(a.rows.length,index-60,120);st.event='';st.mode='window';draw(card,st);
+    });
+    overview.addEventListener('keydown',ev=>{
+      if(ev.key==='ArrowLeft'||ev.key==='ArrowRight'){ev.preventDefault();moveRange(card,ev.key==='ArrowLeft'?'back':'forward');}
+      else if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();const r=rangeFor(a,st);st.range=boundRange(a.rows.length,(r[0]+r[1])/2-60,120);st.mode='window';st.event='';draw(card,st);}
+    });
   });
 }
 byId('scope').addEventListener('change',rebuild);byId('search').addEventListener('input',rebuild);byId('sort').addEventListener('change',rebuild);
-byId('reset').addEventListener('click',()=>{byId('scope').value='all';byId('search').value='';byId('sort').value='date';rebuild();});
+byId('reset').addEventListener('click',()=>{byId('scope').value='all';byId('search').value='';byId('sort').value='code';state.clear();rebuild();});
 rebuild();
 })();
 </script></body></html>
